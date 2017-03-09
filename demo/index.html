@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test</title>
+	<script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+</head>
+<body>
+
+<a-scene>
+
+	<a-sphere id="a" position="0 3.25 -5" radius=".5" color="#FF0"></a-sphere>
+	<a-sphere id="b" position="-5 0 -10" radius=".5" color="#FF0"></a-sphere>
+	<a-sphere id="c" position="5 2 -2" radius=".5" color="#FF0"></a-sphere>
+	<a-sphere id="d" position="1 1 -10" radius=".5" color="#FF0"></a-sphere>
+	<a-sky color="#000"></a-sky>
+
+	<a-entity id="camera" camera look-controls position="0 1.6 0">
+	  <a-entity cursor="fuse: true; maxDistance: 30; timeout: 500"
+	    position="0 0 -.6"
+	    scale=".01 .01 .01"
+	    geometry="primitive: ring"
+	    material="color: green; shader: flat">
+	  </a-entity>
+	</a-entity>
+	<a-plane rotation="-90 0 0" width="30" height="30"></a-plane>
+
+</a-scene>
+<script src="scene_control.js"></script>
+
+</body>
+</html>
