@@ -25,11 +25,6 @@ var animate = function(e) {
   cameraEl.emit(uniquetrigger);
 };
 
-var a = document.querySelector('#a');
-var b = document.querySelector('#b');
-var c = document.querySelector('#c');
-var d = document.querySelector('#d');
-
 var spheres = ['#a', '#b', '#c', '#d'].forEach(function(tag) {
   document.querySelector(tag).addEventListener('mouseenter', animate);
 });
